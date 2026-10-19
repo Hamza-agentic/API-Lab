@@ -1,0 +1,9 @@
+========================================
+TASK 01: Browser Test Explanation
+========================================
+The response changes because the numbers (/1, /2, and /3) act as unique resource identifiers (IDs) in the URL. When you modify the ID at the end of the endpoint, the API server queries a completely different specific resource from its database and returns the unique data (title, body, etc.) corresponding to that specific post.
+
+========================================
+TASK 02: Client, API, and Server Explanation
+========================================
+When the browser sends a request to /posts/1, the API accepts the client request and forwards it to the server. The server fetches the data for ID 1 and returns the response in JSON format.

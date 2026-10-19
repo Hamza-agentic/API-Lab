@@ -1,0 +1,43 @@
+
+import requests
+
+print("-" * 35)
+print("Task 17 - Authorization Header")
+print("-" * 35)
+
+# Use a fake token for demonstration
+token = "YOUR_FAKE_TOKEN"
+
+# Create request headers
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+# Print sanitized request configuration
+print("Request Method: GET")
+print("Endpoint: https://example.com/api/data")
+print("Authorization: Bearer [REDACTED]")
+
+print("-" * 35)
+##Task 18
+import os
+from dotenv import load_dotenv
+
+print("-" * 35)
+print("Task 18 - Load API Key from .env")
+print("-" * 35)
+
+# Load environment variables from .env
+load_dotenv()
+
+# Get API key from environment variable
+api_key = os.getenv("API_KEY")
+
+# Check whether the key exists
+if api_key:
+    print("API Key Loaded: Yes")
+    print("API Key: [REDACTED]")
+else:
+    print("API Key not found!")
+
+print("-" * 35)
